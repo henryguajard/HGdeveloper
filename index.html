@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio de Henry</title>
-   <link rel="icon" href="/img/logo HG.png">
+  <link rel="icon" href="/img/logo HG.png">
+   <!-- Bootstrap animacion.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -17,7 +19,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-  <img src="/img/logo HG.png" alt="Logo Henry" width="100" height="100" class="me-2" />
+  <img src="/img/logo HG.png" alt="Logo Henry" width="80" height="80" class="me-2 logo-nav" />
  
 </a>
 <div class="mb-3 pt-4">
@@ -31,7 +33,7 @@
         <i class="bi bi-instagram navRedes2" style="font-size: 1.5rem;"></i>
       </a>
       
-      <a href="https://wa.me/56912345678" target="_blank" class=" mx-2 navRedes1">
+      <a href="https://wa.me/56995644891" target="_blank" class=" mx-2 navRedes1">
         <i class="bi bi-whatsapp navRedes2" style="font-size: 1.5rem;"></i>
       </a>
     </div>
@@ -53,199 +55,265 @@
     </div>
     </div>
   </nav>
-
   <!-- Sección inicio -->
-  <header id="inicio" class="bg-primary text-white text-center py-5">
-    <div class="container seccion">
-      <h1>Bienvenido a mi portafolio</h1>
-      <p class="lead">Soy desarrollador web y aquí puedes ver mis proyectos.</p>
-    </div>
-  </header>
-  <!-- Sección sobre mí -->
+<!-- Sección inicio -->
+<header id="inicio" class="text-white text-center d-flex align-items-center"
+        style="background: linear-gradient(180deg, #0f0f0f, #ebaeeb); min-height: 100vh; padding-top: 120px;">
+  <div class="container">
+    <img src="/img/logo HG.png" alt="Logo HG Developer" class="img-fluid mb-4" style="max-width: 320px; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));">
+    
+    <a href="#proyectos" class="btn btn-outline-light btn-lg mt-4">
+      Ver proyectos
+    </a>
+    <p class="lead text-light animate__animated animate__zoomIn animate__slow">Potenciando tu presencia digital</p>
+  </div>
+</header>
+ <!-- Sección sobre mí -->
 <section id="sobre-mi" class="py-5 bg-light">
   <div class="container seccion">
-    <h2 class="mb-4 text-center">Sobre mí</h2>
+    <h2 class="mb-5 text-center ">Sobre mí</h2>
+    
     <div class="row align-items-center">
-        <div class="col-md-4 text-center">
-        <img src="/img/yo01.jpg" alt="Foto de perfil" class="img-fluid foto-perfil" width="150" />
+      <div class="col-md-5 text-center mb-4 mb-md-0 ">
+        <img src="/img/yo01.jpg" alt="Foto de perfil" class="img-fluid rounded-3 shadow" style="max-width: 250px;">
       </div>
-        <div class="col-md-8">
-        <p>Soy Henry Guajardo, desarrollador web apasionado por la creación de soluciones digitales modernas y funcionales. Me especializo en tecnologías como HTML, CSS, JavaScript y frameworks como Laravel.</p>
-        <p>Mi enfoque está en la experiencia del usuario, diseño responsivo y buenas prácticas de desarrollo.</p>
+      
+      <div class="col-md-7">
+        <p class="fs-5">Hola, soy <strong>Henry Guajardo</strong>, desarrollador web apasionado por crear soluciones digitales modernas y funcionales.</p>
+        <p class="fs-5">Trabajo con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y frameworks como <strong>Laravel</strong>, enfocándome en diseño responsivo, accesibilidad y experiencia de usuario.</p>
+        <p class="fs-5">Mi misión es potenciar tu presencia digital con sitios web eficientes, rápidos y visualmente atractivos.</p>
+         <!-- Botón Ver CV -->
+        <a href="/docs/CV_Henry_Guajardo_Harvard_Horizontal.pdf" download class="btn btn-primary mt-3">
+         <i class="bi bi-file-earmark-arrow-down me-2"></i>Descargar CV
+         </a>         
       </div>
     </div>
+
   </div>
 </section>
 <!-- Sección servicios -->
 <section id="servicios" class="py-5 bg-light">
   <div class="container seccion">
-    <h2 class="mb-4 text-center">Servicios</h2>
-    <div class="row text-center">
-      <div class="col-md-3 mb-3">
+    <h2 class="mb-5 text-center ">Servicios</h2>
+    <div class="row text-center g-4">
+      
+      <div class="col-md-6 col-lg-3 ">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <i class="bi bi-code-slash fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">Desarrollo Web</h5>
-            <p class="card-text">Diseño y desarrollo de sitios web modernos, rápidos y responsivos con HTML, CSS y JS.</p>
+            <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Desarrollo Web</h5>
+            <p class="card-text">Construyo sitios web rápidos, accesibles y modernos usando HTML, CSS, JS y frameworks como Laravel.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-6 col-lg-3 ">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <i class="bi bi-phone fs-1 text-success"></i>
-            <h5 class="card-title mt-3">Diseño Responsivo</h5>
-            <p class="card-text">Adaptación de páginas para que se vean bien en móviles, tablets y PC.</p>
+            <i class="bi bi-phone fs-1 text-success mb-3"></i>
+            <h5 class="card-title">Diseño Responsivo</h5>
+            <p class="card-text">Interfaces que se adaptan perfectamente a celulares, tablets y escritorios, brindando una experiencia uniforme.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-6 col-lg-3 ">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <i class="bi bi-tools fs-1 text-warning"></i>
-            <h5 class="card-title mt-3">Mantenimiento Web</h5>
-            <p class="card-text">Actualizaciones, mejoras o corrección de errores en sitios ya existentes.</p>
+            <i class="bi bi-tools fs-1 text-warning mb-3"></i>
+            <h5 class="card-title">Mantenimiento Web</h5>
+            <p class="card-text">Soluciono errores, realizo mejoras y mantengo tu sitio actualizado y funcional a largo plazo.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 mb-3">
+
+      <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-3s">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
-            <i class="bi bi-lock fs-1 text-warning"></i>
-            <h5 class="card-title mt-3">Sistemas de login y autenticacion</h5>
-            <p class="card-text">Actualizaciones, mejoras o corrección de errores en sitios ya existentes.</p>
+            <i class="bi bi-lock fs-1 text-danger mb-3"></i>
+            <h5 class="card-title">Login y Autenticación</h5>
+            <p class="card-text">Implementación segura de sistemas de registro e inicio de sesión con validaciones modernas y roles de acceso.</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
 <!-- Sección habilidades -->
-<section id="habilidades" class="py-5">
+<section id="habilidades" class="py-5 bg-light">
   <div class="container seccion">
-    <h2 class="mb-4 text-center">Habilidades</h2>
-    <div class="row text-center">
-      <div class="col-md-3">
-        <i class="bi bi-code-slash fs-1 text-primary"></i>
-        <h5 class="mt-2">HTML & CSS</h5>
+    <h2 class="mb-5 text-center">Habilidades</h2>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h5><i class="bi bi-code-slash me-2 text-primary"></i>HTML & CSS</h5>
+        <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" data-width="90%">90%</div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <i class="bi bi-bootstrap-fill fs-1 text-purple"></i>
-        <h5 class="mt-2">Bootstrap</h5>
+
+      <div class="col-md-6 mb-4">
+        <h5><i class="bi bi-bootstrap-fill me-2 text-purple"></i>Bootstrap</h5>
+        <div class="progress">
+          <div class="progress-bar bg-purple" role="progressbar" style="width: 0%;" data-width="85%">85%</div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <i class="bi bi-filetype-js fs-1 text-warning"></i>
-        <h5 class="mt-2">JavaScript</h5>
+
+      <div class="col-md-6 mb-4">
+        <h5><i class="bi bi-filetype-js me-2 text-warning"></i>JavaScript</h5>
+        <div class="progress">
+          <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 0%;" data-width="75%">75%</div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <i class="bi bi-terminal fs-1 text-success"></i>
-        <h5 class="mt-2">Laravel / PHP</h5>
+
+      <div class="col-md-6 mb-4">
+        <h5><i class="bi bi-terminal me-2 text-success"></i>Laravel / PHP</h5>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-width="70%">70%</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
   <!-- Sección proyectos -->
-  <section id="proyectos" class=" py-5">
-    <div class="container seccion">
-<h2 class="mb-4 text-center">Mis proyectos</h2>
+  <section id="proyectos" class="py-5 bg-light">
+  <div class="container seccion">
+    <h2 class="mb-5 text-center ">Mis proyectos</h2>
     <div class="row g-4">
-
       <!-- Proyecto 1 -->
-      <div class="col-md-4">
+      <div class="col-md-4 ">
         <div class="card h-100 shadow-sm">
-          <img src="/img/Captura01entre.png" class="card-img-top" alt="Proyecto 1" />
-          <div class="card-body">
-            <h5 class="card-title">Entre Uvas y Cafe</h5>
-            <p class="card-text">Diseño personalizado y responsivo,
-
-            página de inicio moderna y visual,
-
-            catálogo de productos,
-
-            formulario de contacto funcional (con envío directo al correo del cliente),
-
-            panel de administración con login seguro,
-
-            gestión de productos en Firebase (crear, editar, eliminar),
-
-            optimización básica para motores de búsqueda (SEO inicial),
-
-            enlace a redes sociales y mapa de ubicación,
-
-            acompañamiento y soporte durante el proceso de desarrollo.            </p>
-            <a href="https://entreuvasycafe.cl/" class="btn btn-primary" target="_blank">Ver proyecto</a>
+          <img src="/img/Captura01entre.png" class="card-img-top" alt="Entre Uvas y Café">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Entre Uvas y Café</h5>
+            <p class="card-text small">
+              Proyecto desarrollado para una cafetería con:
+              <ul class="text-start small ps-3">
+                <li>Página de inicio moderna y responsiva</li>
+                <li>Catálogo de productos</li>
+                <li>Formulario de contacto funcional</li>
+                <li>Panel de administración seguro</li>
+                <li>Gestión de productos con Firebase</li>
+                <li>SEO básico y enlaces a redes</li>
+              </ul>
+            </p>
+            <a href="https://entreuvasycafe.cl/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
       </div>
-
       <!-- Proyecto 2 -->
-      <div class="col-md-4">
+      <div class="col-md-4 ">
         <div class="card h-100 shadow-sm">
-          <img src="/img/Captura decoHouse.png" class="card-img-top" alt="Proyecto 2" />
-          <div class="card-body">
+          <img src="/img/Captura decoHouse.png" class="card-img-top" alt="DecoHouse">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">DecoHouse</h5>
-            <p class="card-text">En este proyecto cree un ecommerce de venta de muebles,
-                 que sea dinamico y amigable con el usuario.
-           Sintaxis & variables
-           Control de flujos
-           Ciclos & iteraciones
-           Funciones
-           Objetos arrays
-           Funciones de orden superior
-           DOM eventos
-           Storage & JSON
-           Operadores avanzados & librerias
-           Asincronía y promesas
-           Fetch
-            tecnologias utilizadas:           
-           HTML5
-           CSS           
-           SASS
-           GIT
-           JAVASCRIPT
-           Framework:
-           BOOTSTRAP 5
-           Consumo de APIS:
-           Utilizo Fetch y utilizo una API externa llamada RANDOM USER</p>
-            <a href=" https://henryguajard.github.io/decohouse/" class="btn btn-primary" target="_blank">Ver proyecto</a>
+            <p class="card-text small">
+              Ecommerce de muebles, enfocado en experiencia de usuario y consumo de APIs:
+              <ul class="text-start small ps-3">
+                <li>HTML5, CSS3, JavaScript, SASS</li>
+                <li>Bootstrap 5, Fetch API</li>
+                <li>LocalStorage y JSON</li>
+                <li>API externa: Random User</li>
+              </ul>
+            </p>
+            <a href="https://henryguajard.github.io/decohouse/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
       </div>
 
       <!-- Proyecto 3 -->
-      <div class="col-md-4">
+      <div class="col-md-4 ">
         <div class="card h-100 shadow-sm">
-          <img src="/img/CapturamononaS.png" class="card-img-top" alt="Proyecto 3" />
-          <div class="card-body">
-            <h5 class="card-title">Cafeteria MononaS</h5>
-            <p class="card-text">
-                
+          <img src="/img/CapturamononaS.png" class="card-img-top" alt="Cafetería MononaS">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cafetería MononaS</h5>
+            <p class="card-text small">
+              Sitio web para cafetería local. Contiene:
+              <ul class="text-start small ps-3">
+                <li>Diseño personalizado y responsive</li>
+                <li>Menú digital y redes sociales</li>
+                <li>Formulario de contacto</li>
+              </ul>
             </p>
-            <a href="https://henryguajard.github.io/cafeMononaS/" class="btn btn-primary" target="_blank">Ver proyecto</a>
+            <a href="https://henryguajard.github.io/cafeMononaS/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
       </div>
 
     </div>
-    </div>
-    
-  </section>
+  </div>
+</section>
   <!-- Sección formación -->
 <section id="formacion" class="py-5 bg-light">
   <div class="container seccion">
-    <h2 class="mb-4 text-center">Formación</h2>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">🎓 Técnico en Programación y Análisis de Sistemas - Instituto XYZ (2024)</li>
-      <li class="list-group-item">💻 Curso de Desarrollo Web - Platzi</li>
-      <li class="list-group-item">📜 Certificación en Laravel - Udemy</li>
-    </ul>
+    <h2 class="mb-5 text-center animate__animated animate__fadeInDown">Formación</h2>
+
+    <!-- Educación -->
+    <div class="mb-4">
+      <h5><i class="bi bi-mortarboard-fill text-primary me-2"></i>Educación</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-start">
+          <img src="/img/Logotipo-IPSS.png" alt="San Sebastián" width="100" class="me-3 mt-1">
+          <div>
+            <strong>Instituto Profesional San Sebastián</strong><br>
+            Técnico en Programación y Análisis de Sistemas<br>
+            <span class="text-muted">2023 - Actualidad</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Certificaciones -->
+    <div>
+      <h5><i class="bi bi-award-fill text-success me-2"></i>Certificaciones y Cursos</h5>
+      <ul class="list-group list-group-flush">
+
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/logoAWSacademy.png" alt="AWS" width="100" class="me-3">
+          <div>
+            AWS Academy Cloud Foundations<br>
+            <span class="text-muted">Noviembre 2024</span>
+          </div>
+        </li>
+
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/Oracle-Academy_logo.png" alt="Oracle" width="100" class="me-3">
+          <div>
+            Oracle Academy – Database Foundations<br>
+            <span class="text-muted">Octubre 2024</span>
+          </div>
+        </li>
+
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/Oracle-Academy_logo.png" alt="Oracle Java" width="100" class="me-3">
+          <div>
+            Oracle Academy – Java Foundations<br>
+            <span class="text-muted">Junio 2023</span>
+          </div>
+        </li>
+
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/logoCoder.png" alt="CoderHouse JS" width="100" class="me-3">
+          <div>
+            CoderHouse – JavaScript<br>
+            <span class="text-muted">Marzo 2023</span>
+          </div>
+        </li>
+
+        <li class="list-group-item d-flex align-items-center">
+          <img src="/img/logoCoder.png" alt="CoderHouse Web" width="100" class="me-3">
+          <div>
+            CoderHouse – Desarrollo Web<br>
+            <span class="text-muted">Diciembre 2022</span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </section>
-
-
   <!-- Sección contacto -->
   <section id="contacto" class="bg-light py-5">
     <div class="container seccion">
@@ -279,7 +347,8 @@
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- JS personalizado -->
-  <script src="contacto.js"></script>
-  <script src="nav.js"></script>
+  <script src="/js/contacto.js"></script>
+  <script src="/js/habilidades.js"></script>
+  <script src="/js/nav.js"></script>
 </body>
 </html>

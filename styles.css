@@ -4,6 +4,13 @@ body {
       color: #2E2E2E;
       
     }
+
+    :root {
+  --gato-glow: #c5ff00; /* amarillo verdoso brillante */
+}
+
+
+
     .btn-primary:focus,
     
     .btn-primary:focus:active,
@@ -43,6 +50,20 @@ body {
       padding: 24px;
     }
 
+    .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(197, 255, 0, 0.4); /* glow suave */
+  border: 1px solid var(--gato-glow);
+}
+
+.card:hover i {
+  color: var(--gato-glow) !important;
+}
+
     .navbar-nav .nav-link {
       color: #1E3A8A;
     }
@@ -64,9 +85,25 @@ body {
       display: inline-block;
     }
     nav .navRedes1:hover .navRedes2{
-     color: #162d6d; /* Cambia a tu color preferido */
+     color: #5f75b3; /* Cambia a tu color preferido */
       transition: color 0.3s ease;
     }
+
+    .logo-nav {
+  border-radius: 10%;             /* Hace la imagen redonda */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra suave al lado derecho */
+  object-fit: cover;  }            /* Evita que la imagen se distorsione */
+
+  .text-purple {
+  color: #7952b3;
+}
+.bg-purple {
+  background-color: #7952b3;
+}
+
+.progress-bar {
+  transition: width 1.8s ease-in-out;
+}
 
     .foto-perfil{
       border-radius: 5%;
