@@ -1,62 +1,127 @@
 body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
-      color: #2E2E2E;
-      
-    }
+  font-family: 'Poppins', sans-serif;
+}
 
-    :root {
-  --gato-glow: #c5ff00; /* amarillo verdoso brillante */
+
+:root {
+  --gato-glow: #1F51FF;
+}
+
+/* === MODO OSCURO === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.navbar.dark-mode {
+  background-color: #1f1f1f !important;
+}
+
+.card.dark-mode {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a;
 }
 
 
 
-    .btn-primary:focus,
-    
-    .btn-primary:focus:active,
-    .btn-primary:visited {
-      background-color: #162d6d !important;
-      color: #FFFFFF !important;
-      box-shadow: none !important;
-      border-color: transparent !important;
-      outline: none !important;
-    }
+.dark-mode footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+}
 
-    header {
-      background-color: #1E3A8A;
-    }
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h5 {
+  color: #f0f0f0;
+}
 
-    h1, h2, h5 {
-      color: #1E3A8A;
-    }
+.dark-mode .nav-link {
+  color: #f0f0f0 !important;
+}
 
-    .btn-primary {
-      background-color: #1E3A8A;
-      border: none;
-      transition: background-color 0.3s ease;
-    }
+.dark-mode .nav-link:hover {
+  color: var(--gato-glow) !important;
+}
 
-    .btn-primary:hover {
-      background-color: #2256e3;
-      box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
-    }
+.dark-mode .btn-outline-secondary {
+  border-color: #ccc;
+  color: #ccc;
+}
 
-    .card {
-      border-radius: 16px;
-      border: none;
-    }
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #333;
+  color: #fff;
+}
 
-    .card-body {
-      padding: 24px;
-    }
+.dark-mode .seccion {
+  background-color: #121212;
+}
 
-    .card {
+.dark-mode .list-group-item {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #333;
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+  color: var(--gato-glow);
+}
+
+.dark-mode nav .navRedes1 {
+  color: #f0f0f0;
+}
+
+.dark-mode nav .navRedes1:hover .navRedes2 {
+  color: var(--gato-glow);
+}
+
+/* === ESTILOS GENERALES (NO CAMBIAN) === */
+.btn-primary:focus,
+.btn-primary:focus:active,
+.btn-primary:visited {
+  background-color: #162d6d !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+header {
+  background-color: #1E3A8A;
+}
+
+ h2, h5 {
+  color: #162b65 !important;
+}
+.text-primary{
+  color: #162b65 !important;
+}
+
+.btn-primary {
+  background-color: #1E3A8A;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2256e3;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(197, 255, 0, 0.4); /* glow suave */
+  box-shadow: 0 0 15px rgba(197, 255, 0, 0.4);
   border: 1px solid var(--gato-glow);
 }
 
@@ -64,39 +129,44 @@ body {
   color: var(--gato-glow) !important;
 }
 
-    .navbar-nav .nav-link {
-      color: #1E3A8A;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #5f75b3;
-    }
-    .seccion {
-    padding-top: 7rem;
-    
+.navbar-nav .nav-link {
+  color: #1E3A8A;
 }
 
-  nav .navRedes1{
-      text-decoration: none !important;
-      color: #1E3A8A;
-    }
-    nav .navRedes2{
-      text-decoration: none;
-      display: inline-block;
-    }
-    nav .navRedes1:hover .navRedes2{
-     color: #5f75b3; /* Cambia a tu color preferido */
-      transition: color 0.3s ease;
-    }
+.navbar-nav .nav-link:hover {
+  color: #5f75b3;
+}
 
-    .logo-nav {
-  border-radius: 10%;             /* Hace la imagen redonda */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra suave al lado derecho */
-  object-fit: cover;  }            /* Evita que la imagen se distorsione */
+.seccion {
+  padding-top: 7rem;
+}
 
-  .text-purple {
+nav .navRedes1 {
+   margin-right: 1.2rem;
+  text-decoration: none !important;
+  color: #1E3A8A;
+}
+
+nav .navRedes2 {
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav .navRedes1:hover .navRedes2 {
+  color: #5f75b3;
+  transition: color 0.3s ease;
+}
+
+.logo-nav {
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.text-purple {
   color: #7952b3;
 }
+
 .bg-purple {
   background-color: #7952b3;
 }
@@ -105,17 +175,15 @@ body {
   transition: width 1.8s ease-in-out;
 }
 
-    .foto-perfil{
-      border-radius: 5%;
-    }
+.foto-perfil {
+  border-radius: 5%;
+}
 
+footer {
+  border-top: 1px solid #e5e5e5;
+}
 
-    footer {
-      border-top: 1px solid #e5e5e5;
-    }
-
-    .list-group-item {
-      background-color: transparent;
-      border: none;
-    }
-    
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}

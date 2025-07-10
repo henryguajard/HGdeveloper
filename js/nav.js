@@ -31,8 +31,25 @@ document.querySelectorAll('.filtro-btn').forEach(btn => {
         }
       }
     });
-     // 🔵 Marcar visualmente el botón seleccionado
+     //  Marcar visualmente el botón seleccionado
     document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
   });
 });
+
+const toggleBtn = document.getElementById('toggleTheme');
+  const prefersDark = localStorage.getItem('theme') === 'dark';
+
+  if (prefersDark) {
+    document.body.classList.add('dark-mode');
+    document.querySelector('.navbar').classList.add('dark-mode');
+    document.querySelectorAll('.card').forEach(card => card.classList.add('dark-mode'));
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    document.querySelector('.navbar').classList.toggle('dark-mode');
+    document.querySelectorAll('.card').forEach(card => card.classList.toggle('dark-mode'));
+
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
