@@ -37,19 +37,23 @@ document.querySelectorAll('.filtro-btn').forEach(btn => {
   });
 });
 
-const toggleBtn = document.getElementById('toggleTheme');
-  const prefersDark = localStorage.getItem('theme') === 'dark';
 
-  if (prefersDark) {
-    document.body.classList.add('dark-mode');
-    document.querySelector('.navbar').classList.add('dark-mode');
-    document.querySelectorAll('.card').forEach(card => card.classList.add('dark-mode'));
-  }
+//menu hamburgesa
+document.addEventListener('DOMContentLoaded', () => {
+  const toggler = document.querySelector('.custom-toggler');
+  const iconOpen = toggler.querySelector('.bi-list');
+  const iconClose = toggler.querySelector('.bi-x-lg');
+  const collapseMenu = document.getElementById('navbarContenido');
 
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    document.querySelector('.navbar').classList.toggle('dark-mode');
-    document.querySelectorAll('.card').forEach(card => card.classList.toggle('dark-mode'));
-
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  collapseMenu.addEventListener('show.bs.collapse', () => {
+      console.log('Menu abierto');
+    iconOpen.classList.add('d-none');
+    iconClose.classList.remove('d-none');
   });
+
+  collapseMenu.addEventListener('hide.bs.collapse', () => {
+      console.log('Menu cerrado');
+    iconOpen.classList.remove('d-none');
+    iconClose.classList.add('d-none');
+  });
+});

@@ -17,6 +17,22 @@ body.dark-mode {
   background-color: #1f1f1f !important;
 }
 
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border-color: #162d6d;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgb(76, 100, 166); /* sombra suave en tu color */
+}
+.custom-toggler .bi {
+  
+  font-size: 1.5rem; /* Tamaño opcional, ajustable */
+  transition: color 0.3s ease;
+}
+
 .card.dark-mode {
   background-color: #1e1e1e;
   color: #fff;
