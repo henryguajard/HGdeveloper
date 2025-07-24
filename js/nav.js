@@ -57,3 +57,30 @@ document.addEventListener('DOMContentLoaded', () => {
     iconClose.classList.add('d-none');
   });
 });
+
+ tsParticles.load("tsparticles", {
+    fullScreen: false,
+    background: {
+      color: {
+        value: "transparent"
+      }
+    },
+    particles: {
+      number: { value: 60 },
+      color: { value: "#ffffff" },
+      size: { value: 2 },
+      move: { speed: 1 },
+      links: { enable: true, distance: 100, color: "#ffffff" }
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const linkProyectos = document.querySelector('a[href="#proyectos"]');
+    linkProyectos?.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevenir comportamiento por defecto
+      const seccion = document.querySelector('#proyectos');
+      if (seccion) {
+        seccion.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
