@@ -1,13 +1,46 @@
-// Formulario contacto: mostrar mensaje al enviar
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
 
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Evita el envío normal
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          Swal.fire({
+   title: '✔️ ¡Mensaje enviado!',
+  text: 'Gracias por contactarme. Te responderé pronto.',
+  imageUrl: '/img/modal2.png',
+  imageWidth: 50,
+  imageHeight: 60,
+  imageAlt: 'Icono de éxito',
+  timer: 3000,
+  showConfirmButton: false
   
-
-  // Simular envío
-  const resultado = document.getElementById('formResultado');
-  resultado.textContent = 'Gracias por contactarme, responderé pronto.';
-
-  // Limpiar formulario
-  this.reset();
-});
+          });
+          form.reset();
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Hubo un problema al enviar el mensaje.'
+          });
+        }
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'No se pudo conectar con el servidor.'
+        });
+      });
+    });
+  });

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio de Henry</title>
-  <link rel="icon" href="/img/al.png">
+  <link rel="icon" href="/img/modal2.png">
    <!-- Bootstrap animacion.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Bootstrap CSS -->
@@ -220,98 +220,109 @@
   </div>
 </section>
 
-  <!-- Sección proyectos -->
-  <section id="proyectos" class="py-5 bg-light">
+ <!-- Sección proyectos -->
+<section id="proyectos" class="py-5 bg-light">
   <div class="container seccion">
-    <h2 class="mb-5 text-center ">Mis proyectos</h2>
+    <h2 class="mb-5 text-center">Mis proyectos</h2>
     <div class="row g-4">
+
       <!-- Proyecto 1 -->
-      <div class="col-md-4 ">
+      <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-          <!-- Carousel de imágenes -->
-    <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/uvas-carrusel0.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/uvas-carrusel.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
-        </div>
-      </div>
-    </div>
-
-
+          <div id="carouselProyecto1" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/uvas-carrusel0.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/uvas-carrusel.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Entre Uvas y Café</h5>
             <p class="card-text small">
               Proyecto desarrollado para una cafetería con:
-              <ul class="text-start small ps-3">
-                <li>Página de inicio moderna y responsiva</li>
-                <li>Catálogo de productos</li>
-                <li>Formulario de contacto funcional</li>
-                <li>Panel de administración seguro</li>
-                <li>Gestión de productos con Firebase</li>
-                <li>SEO básico y enlaces a redes</li>
-              </ul>
             </p>
+            <ul class="text-start small ps-3">
+              <li>Página de inicio moderna y responsiva</li>
+              <li>Catálogo de productos</li>
+              <li>Formulario de contacto funcional</li>
+              <li>Panel de administración seguro</li>
+              <li>Gestión de productos con Firebase</li>
+              <li>SEO básico y enlaces a redes</li>
+            </ul>
             <a href="https://entreuvasycafe.cl/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
       </div>
+
       <!-- Proyecto 2 -->
-      <div class="col-md-4 ">
+      <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-                <!-- Carousel de imágenes -->
-          <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselProyecto2" class="carousel slide" data-bs-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/carrusel-decoh1.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
+                <img src="/img/carrusel-decoh1.png" class="d-block w-100 img-carrusel" alt="DecoHouse 1">
               </div>
               <div class="carousel-item">
-                <img src="/img/carruseldecoh2.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
+                <img src="/img/carruseldecoh2.png" class="d-block w-100 img-carrusel" alt="DecoHouse 2">
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">DecoHouse (actualizacion en proceso)</h5>
-            <p class="card-text small">
-             Ecommerce de muebles con frontend y backend integrados. Proyecto desplegado en Render y conectado a MongoDB Atlas:
-              <ul class="text-start small ps-3">
-                <li>HTML5, CSS3, JavaScript,Bootstrap 5</li>
-                <li>Node.js, Express, EJS</li>
-                <li>MongoDB Atlas con Mongoose</li>
-                <li>Render (hosting)</li>
-              </ul>
-            </p>
+            <h5 class="card-title">DecoHouse (actualización en proceso)</h5>
+            <p class="card-text small">Ecommerce de muebles con frontend y backend integrados:</p>
+            <ul class="text-start small ps-3">
+              <li>HTML5, CSS3, JavaScript, Bootstrap 5</li>
+              <li>Node.js, Express, EJS</li>
+              <li>MongoDB Atlas con Mongoose</li>
+              <li>Render (hosting)</li>
+            </ul>
             <a href="https://decohouse.onrender.com/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
       </div>
 
       <!-- Proyecto 3 -->
-      <div class="col-md-4 ">
+      <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-               <!-- Carousel de imágenes -->      
-          <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselProyecto3" class="carousel slide" data-bs-interval="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/carrusel-mononas1.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
+                <img src="/img/carrusel-mononas1.png" class="d-block w-100 img-carrusel" alt="Mononas 1">
               </div>
               <div class="carousel-item">
-                <img src="/img/carrusel-mononas2.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
+                <img src="/img/carrusel-mononas2.png" class="d-block w-100 img-carrusel" alt="Mononas 2">
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Cafetería MononaS (actualizacion en proceso)</h5>
-            <p class="card-text small">
-              Sitio web para cafetería local. Contiene:
-              <ul class="text-start small ps-3">
-                <li>Diseño personalizado y responsive</li>
-                <li>Menú digital y redes sociales</li>
-                <li>Formulario de contacto</li>
-              </ul>
-            </p>
+            <h5 class="card-title">Cafetería MononaS (actualización en proceso)</h5>
+            <p class="card-text small">Sitio web para cafetería local:</p>
+            <ul class="text-start small ps-3">
+              <li>Diseño personalizado y responsive</li>
+              <li>Menú digital y redes sociales</li>
+              <li>Formulario de contacto</li>
+            </ul>
             <a href="https://henryguajard.github.io/cafeMononaS/" class="btn btn-primary mt-auto" target="_blank">Ver proyecto</a>
           </div>
         </div>
@@ -320,6 +331,7 @@
     </div>
   </div>
 </section>
+
   <!-- Sección formación -->
 <section id="formacion" class="py-5 bg-light">
   <div class="container seccion">
@@ -389,28 +401,40 @@
     </div>
   </div>
 </section>
-  <!-- Sección contacto -->
-  <section id="contacto" class="bg-light py-5">
-    <div class="container seccion">
-      <h2 class="mb-4 text-center">Contáctame</h2>
-      <form id="contactForm" class="mx-auto" style="max-width: 500px;">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" required />
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      </form>
-      <p id="formResultado" class="mt-3 text-center text-success fw-bold"></p>
-    </div>
-  </section>
+ <!-- Sección contacto -->
+<section id="contacto" class="bg-light py-5 seccion">
+  <div class="container">
+    <h2 class="mb-4 text-center">Contáctame</h2>
+
+   <form 
+  id="contactForm"
+  class="mx-auto shadow-lg p-4 rounded"
+  style="max-width: 500px; background-color: white;"
+  action="https://formsubmit.co/ajax/hgdeveloper006@gmail.com"
+  method="POST"
+>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <!-- Anti-spam -->
+  <input type="hidden" name="_honey" style="display:none">
+  
+  <!-- Campos visibles -->
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" required />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="email" name="email" required />
+  </div>
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary w-100">Enviar</button>
+</form>
+  </div>
+</section>
     <!-- Sección footer -->
   <footer class="bg-white  text-dark text-center py-4 mt-5">
   <div class="container  d-flex flex-column align-items-center">
@@ -422,6 +446,8 @@
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- JS personalizado -->
   <script src="/js/contacto.js"></script>
   <script src="/js/habilidades.js"></script>
