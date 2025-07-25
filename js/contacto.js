@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const formData = new FormData(form);
 
-      fetch(form.action, {
+      fetch("https://formsubmit.co/1c7fce060ae883730f5f79dc3a432e99", {
         method: 'POST',
         body: formData,
         headers: {
