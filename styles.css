@@ -51,56 +51,6 @@ html {
   object-fit: cover;
 }
 
-.dark-mode footer {
-  background-color: #1a1a1a;
-  border-top: 1px solid #333;
-}
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h5 {
-  color: #f0f0f0;
-}
-
-.dark-mode .nav-link {
-  color: #f0f0f0 !important;
-}
-
-.dark-mode .nav-link:hover {
-  color: var(--gato-glow) !important;
-}
-
-.dark-mode .btn-outline-secondary {
-  border-color: #ccc;
-  color: #ccc;
-}
-
-.dark-mode .btn-outline-secondary:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode .seccion {
-  background-color: #121212;
-}
-
-.dark-mode .list-group-item {
-  background-color: transparent;
-  color: #ccc;
-  border-color: #333;
-}
-
-.dark-mode .navbar-nav .nav-link:hover {
-  color: var(--gato-glow);
-}
-
-.dark-mode nav .navRedes1 {
-  color: #f0f0f0;
-}
-
-.dark-mode nav .navRedes1:hover .navRedes2 {
-  color: var(--gato-glow);
-}
 
 /* === ESTILOS GENERALES (NO CAMBIAN) === */
 .btn-primary:focus,
