@@ -1,14 +1,26 @@
+:root{
+      --azul:#1e90ff;
+      --cian:#00cfff;
+      --metal:#6b7c93;
+      --fondo1:#0a0f1f;
+      --fondo2:#051428;
+      --gato-glow: #1F51FF;
+    }
+
 body {
-  font-family: 'Poppins', sans-serif;
+   font-family:'Orbitron',system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%2300cfff' stroke-width='1' opacity='0.05'%3E%3Cpath d='M0 60h60v60H0zM60 0h60v60H60z'/%3E%3Cpath d='M30 0v120M0 30h120M90 0v120M0 90h120'/%3E%3C/g%3E%3C/svg%3E") repeat,
+        linear-gradient(180deg,var(--fondo1),var(--fondo2));
+      background-size:auto,cover;
+      min-height:100vh;
 }
 
 html {
     scroll-behavior: smooth;
   }
 
-:root {
-  --gato-glow: #1F51FF;
-}
+
 
 #tsparticles {
   position: absolute;
@@ -36,15 +48,7 @@ html {
   transition: color 0.3s ease;
 }
 
-.card.dark-mode {
-  background-color: #1e1e1e;
-  color: #fff;
-  border: 1px solid #333;
-}
 
-.dark-mode header {
-  background-color: #1a1a1a;
-}
 
 .img-carrusel {
   height: 200px; /* o el alto que prefieras */
@@ -68,7 +72,7 @@ header {
 }
 
  h2, h5 {
-  color: #162b65 !important;
+  color: var(--cian)!important;
 }
 .text-primary{
   color: #162b65 !important;
@@ -159,3 +163,25 @@ footer {
   background-color: transparent;
   border: none;
 }
+
+  .btn-energia{
+      display:inline-block; margin-top:1rem;
+      border:2px solid var(--azul); color:var(--azul); background:transparent;
+      padding:.85rem 1.5rem; text-decoration:none; position:relative; overflow:hidden;
+    }
+    .btn-energia::before{
+      content:""; position:absolute; inset:0 auto 0 -100%;
+      width:100%; background:linear-gradient(90deg,transparent,rgba(0,207,255,.55),transparent);
+      animation:energia 2.2s infinite;
+    }
+    @keyframes energia{ 0%{left:-100%} 55%{left:100%} 100%{left:100%} }
+    .btn-energia:hover{ background:var(--azul); color:#000; box-shadow:0 0 18px var(--cian) }
+    .card-neo{
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--azul);
+      color:#e0e0e0;
+      padding:1.25rem;
+      transition:.3s;
+      height:100%;
+    }
+    .card-neo:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 0 18px rgba(0,207,255,.3) }

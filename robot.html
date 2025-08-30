@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mockup Portafolio — HG Developer (Gato Robótico Azul)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS (CDN) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      --azul:#1e90ff;
+      --cian:#00cfff;
+      --metal:#6b7c93;
+      --fondo1:#0a0f1f;
+      --fondo2:#051428;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Orbitron',system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      color:#e0e0e0;
+      background:
+        url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%2300cfff' stroke-width='1' opacity='0.05'%3E%3Cpath d='M0 60h60v60H0zM60 0h60v60H60z'/%3E%3Cpath d='M30 0v120M0 30h120M90 0v120M0 90h120'/%3E%3C/g%3E%3C/svg%3E") repeat,
+        linear-gradient(180deg,var(--fondo1),var(--fondo2));
+      background-size:auto,cover;
+      min-height:100vh;
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(6px);
+      background: rgba(0,0,0,.6);
+      border-bottom:1px solid var(--azul);
+    }
+    .logo-wrap{
+      display:flex; align-items:center; gap:.75rem;
+    }
+    /* Inline SVG logo tweaks */
+    .logo svg{height:48px; width:48px; display:block}
+    .logo .eye{fill:var(--cian); filter: drop-shadow(0 0 6px var(--cian));}
+    .blink{animation:blink 2.2s infinite}
+    @keyframes blink{
+      0%, 45%, 55%, 100%{ transform:scaleY(1) }
+      50%{ transform:scaleY(0.1) }
+    }
+    .brand{
+      margin:0; color:var(--azul);
+      letter-spacing:.04em; font-weight:700;
+    }
+    nav a{
+      color:var(--azul); text-decoration:none; margin-left:1rem;
+    }
+    nav a:hover{ color:var(--cian) }
+    /* Hero */
+    .hero{ text-align:center; padding:5rem 1.25rem 3rem }
+    .hero h1{
+      font-size:clamp(2rem, 4.5vw, 3rem);
+      color:var(--azul);
+      position:relative; overflow:hidden; display:inline-block;
+    }
+    .hero h1::before{
+      content:""; position:absolute; inset:0 auto 0 -75%;
+      width:55%; background:linear-gradient(120deg,transparent,rgba(0,207,255,.40),transparent);
+      transform:skewX(-20deg); animation:laser 3s infinite;
+    }
+    @keyframes laser{
+      0%{ left:-75% } 100%{ left:125% }
+    }
+    .hero p.lead{ color:#cfe8ff; max-width:780px; margin:1rem auto 0 }
+    .btn-energia{
+      display:inline-block; margin-top:1rem;
+      border:2px solid var(--azul); color:var(--azul); background:transparent;
+      padding:.85rem 1.5rem; text-decoration:none; position:relative; overflow:hidden;
+    }
+    .btn-energia::before{
+      content:""; position:absolute; inset:0 auto 0 -100%;
+      width:100%; background:linear-gradient(90deg,transparent,rgba(0,207,255,.55),transparent);
+      animation:energia 2.2s infinite;
+    }
+    @keyframes energia{ 0%{left:-100%} 55%{left:100%} 100%{left:100%} }
+    .btn-energia:hover{ background:var(--azul); color:#000; box-shadow:0 0 18px var(--cian) }
+    /* Secciones */
+    section{ padding:3rem 0 }
+    h2.section-title{
+      text-align:center; color:var(--cian); margin-bottom:1.5rem;
+      text-shadow:0 0 10px rgba(0,207,255,.2);
+    }
+    /* Cards */
+    .card-neo{
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--azul);
+      color:#e0e0e0;
+      padding:1.25rem;
+      transition:.3s;
+      height:100%;
+    }
+    .card-neo:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 0 18px rgba(0,207,255,.3) }
+    /* Footer */
+    footer{
+      background:rgba(0,0,0,.78);
+      border-top:1px solid var(--azul);
+      color:#9aa6b2;
+    }
+    /* AOS fallback (si no carga, mostramos) */
+    [data-aos]{ opacity:1; transform:none }
+    /* Helpers */
+    .container-narrow{ max-width:1000px }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo-wrap">
+        <div class="logo" aria-label="Logo gato robótico azul">
+          <!-- Simple inline SVG robo-cat -->
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="metal" x1="0" x2="1">
+                <stop offset="0%" stop-color="#3b4a63"/>
+                <stop offset="100%" stop-color="#0f1a2d"/>
+              </linearGradient>
+            </defs>
+            <!-- head -->
+            <path d="M12 20 L20 8 L28 16 H36 L44 8 L52 20 V44 Q52 56 32 56 Q12 56 12 44 Z" fill="url(#metal)" stroke="#1e90ff" stroke-width="2"/>
+            <!-- ears lines -->
+            <line x1="20" y1="10" x2="24" y2="16" stroke="#00cfff" stroke-width="2" opacity=".7"/>
+            <line x1="44" y1="10" x2="40" y2="16" stroke="#00cfff" stroke-width="2" opacity=".7"/>
+            <!-- eyes -->
+            <ellipse cx="24" cy="32" rx="5" ry="3" class="eye blink"/>
+            <ellipse cx="40" cy="32" rx="5" ry="3" class="eye blink"/>
+            <!-- whisker ports -->
+            <circle cx="16" cy="36" r="1.2" fill="#00cfff"/>
+            <circle cx="48" cy="36" r="1.2" fill="#00cfff"/>
+          </svg>
+        </div>
+        <h1 class="brand">HG Developer</h1>
+      </div>
+      <nav class="d-none d-md-block">
+        <a href="#sobre-mi" class="me-3">Sobre mí</a>
+        <a href="#proyectos" class="me-3">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container container-narrow text-center">
+      <h1 data-aos="zoom-in">Desarrollador Web</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="150">
+        Creando experiencias digitales con precisión y tecnología.
+      </p>
+      <a href="#proyectos" class="btn-energia" data-aos="fade-up" data-aos-delay="300">Ver Proyectos</a>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5">
+    <div class="container container-narrow">
+      <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card-neo h-100">
+            <h3 class="h5">Proyecto 1</h3>
+            <p>Landing page con diseño responsive y efectos de microinteracción.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="150">
+          <div class="card-neo h-100">
+            <h3 class="h5">Proyecto 2</h3>
+            <p>SPA con API REST y panel de administración.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+          <div class="card-neo h-100">
+            <h3 class="h5">Proyecto 3</h3>
+            <p>E-commerce minimalista con pasarela de pago.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center small">
+      © 2025 HG Developer — Estilo Gato Robótico Azul
+    </div>
+  </footer>
+
+  <!-- Scripts CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inicializa AOS (si está disponible)
+    if (window.AOS){ AOS.init({ duration: 1000, once: true }); }
+  </script>
+</body>
+</html>
