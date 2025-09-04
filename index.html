@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio de Henry</title>
-  <link rel="icon" href="/img/modal2.png">
-   <!-- Bootstrap animacion.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="/img/al5.png">
+  <!-- Bootstrap animacion.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,449 +15,477 @@
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- Navbar -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-  <div class="container d-flex justify-content-between align-items-center">
-    <!-- Logo + Nombre Marca -->
-    <a class="navbar-brand d-flex flex-column flex-lg-row align-items-center" href="#">
-      <img src="/img/AlbedoBase_X.png" alt="Logo Henry" width="60" height="60" class="logo-nav mb-1 mb-lg-0 me-lg-2" />
-      
-      <!-- Texto adaptable -->
-      <span class="text-center text-lg-start">
-        <h1 class="h6 h5-lg mb-0 fw-bold text-primary">HG Developer</h1>
-        <small class="d-none d-md-block text-muted">Tu éxito digital</small>
-      </span>
-    </a>
+  <nav class="navbar fixed-top navbar-expand-lg  ">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo + Nombre Marca -->
+      <a class="navbar-brand d-flex flex-column flex-lg-row align-items-center" href="#">
+        <img src="/img/al5.png" alt="Logo Henry" width="60" height="60" class="logo-nav mb-1 mb-lg-0 me-lg-2" />
 
-    <!-- Redes y botón modo oscuro -->
-    <div class="d-flex align-items-center gap-1 gap-lg-3">
-  <a href="https://instagram.com" target="_blank" class="navRedes1">
-    <i class="bi bi-instagram navRedes2" style="font-size: 1.5rem;"></i>
-  </a>
-  <a href="https://wa.me/56995644891" target="_blank" class="navRedes1">
-    <i class="bi bi-whatsapp navRedes2" style="font-size: 1.5rem;"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/henry-guajardo-28271925b/" target="_blank" class="navRedes1">
-    <i class="bi bi-linkedin navRedes2" style="font-size: 1.5rem;"></i>
-  </a>
- 
-</div>
+        <!-- Texto adaptable -->
+        <span class="text-center text-lg-start">
+          <h1 class="h6 h5-lg mb-0 fw-bold " style="color: #00cfff;;">HG Developer</h1>
+          <small class="d-none d-md-block text-white">Tu éxito digital</small>
+        </span>
+      </a>
 
+      <!-- Redes y botón modo oscuro -->
+      <div class="d-flex align-items-center gap-1 gap-lg-3">
+        <a href="https://instagram.com" target="_blank" class="navRedes1">
+          <i class="bi bi-instagram navRedes2" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://wa.me/56995644891" target="_blank" class="navRedes1">
+          <i class="bi bi-whatsapp navRedes2" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/henry-guajardo-28271925b/" target="_blank" class="navRedes1">
+          <i class="bi bi-linkedin navRedes2" style="font-size: 1.5rem;"></i>
+        </a>
 
- <!-- Botón de hamburguesa -->
-<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-  <i class="bi bi-list" style="color: #162d6d;"></i> <!-- ícono hamburguesa -->
-  <i class="bi bi-x-lg d-none" style="color: #162d6d;"></i> <!-- ícono "X" de cerrar -->
-</button>
-
-  <!-- Menú de navegación -->
-<div class="collapse navbar-collapse" id="navbarContenido">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#inicio">Inicio</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#servicios">Servicios</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#formacion">Formacion</a></li>
-    <li class="nav-item px-lg-2"><a class="nav-link" href="#contacto">Contacto</a></li>
-  </ul>
-</div>
-</nav>
-
-
-<!-- Sección inicio -->
-<header id="inicio" class="text-white text-center d-flex align-items-center position-relative"
-        style="background: linear-gradient(180deg, #faf5fa , #0f0f0f); min-height: 100vh; padding-top: 120px;">
-         <!-- Partículas de fondo -->
-  <div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: 0;"></div>
-
-  <div class="container ">
-    
-    <!-- Logo -->
-    <img src="/img/al5.png" alt="Logo HG Developer" class="img-fluid mb-4"
-         style="max-width: 190px; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.985)); border-radius: 50%; transition: transform 0.3s;">
-    
-    <!-- Título principal -->
-    <h2 class="display-5 fw-bold">Hola, soy Henry Guajardo</h2>
-    <p class="lead text-light mb-4">Desarrollador web Full Stack con pasión por el diseño y la eficiencia</p>
-
-    <!-- Botón de acción -->
-    <a href="#proyectos" class="btn-energia btn-lg">
-      Ver proyectos
-    </a>
-
-    <!-- Redes sociales con Bootstrap Icons -->
-   <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-  <a href="https://github.com/henryguajard" target="_blank" class="navRedes1">
-    <i class="bi bi-github navRedes2" style="font-size: 1.5rem;"></i>
-  </a>
-
-  <a href="mailto:hgdeveloper006@gmail.com" class="navRedes1">
-    <i class="bi bi-envelope-fill navRedes2" style="font-size: 1.5rem;"></i>
-  </a>
-</div>
-
-    <!-- Eslogan final -->
-    <p class="lead text-light mt-4 animate__animated animate__zoomIn animate__delay-1s">
-      Potenciando tu presencia digital
-    </p>
-
-  </div>
-</header>
- <!-- Sección sobre mí -->
-<section id="sobre-mi" class="py-5 ">
-  <div class=" container seccion">
-    <a href="" class="" ><h2 class="mb-5 text-center btn-energia "  >Sobre mi</h2></a>
-    
-    <div class="row card-neo align-items-center">
-      <div class="col-md-5 text-center mb-4 mb-md-0 ">
-        <img src="/img/yo01.jpg" alt="Foto de perfil" class="img-fluid rounded-3 shadow" style="max-width: 250px;">
       </div>
-      
-      <div class="col-md-7">
-        <p class="fs-5 text-white">Hola, soy <strong>Henry Guajardo</strong>, desarrollador web apasionado por crear soluciones digitales modernas y funcionales.</p>
-        <p class="fs-5 text-white">Trabajo con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Java</strong> y frameworks como <strong>Bootstrap</strong>, <strong>Laravel, </strong> y <strong>Spring Boot</strong>, enfocándome en diseño responsivo, accesibilidad y experiencia de usuario.</p>
-        <p class="fs-5 text-white">Mi misión es potenciar tu presencia digital con sitios web eficientes, rápidos y visualmente atractivos.</p>
-         <!-- Botón Ver CV -->
-        <a href="/docs/CV_Henry_Guajardo_Harvard_Horizontal.pdf" download class="btn-energia mt-3 w-100 d-block">
-         <i class="bi bi-file-earmark-arrow-down me-2"></i>Descargar CV
-         </a>         
+
+
+      <!-- Botón de hamburguesa -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list" style="color: #162d6d;"></i> <!-- ícono hamburguesa -->
+        <i class="bi bi-x-lg d-none" style="color: #162d6d;"></i> <!-- ícono "X" de cerrar -->
+      </button>
+
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#formacion">Formacion</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
       </div>
+  </nav>
+
+
+  <!-- Sección inicio -->
+  <header id="inicio" class="text-white text-center d-flex align-items-center position-relative"
+    style="background: linear-gradient(180deg, #6b7c93 , #051428);min-height: 100vh; padding-top: 120px;">
+    <!-- Partículas de fondo style="background: linear-gradient(180deg, #343334 , #0f0f0f); min-height: 100vh; padding-top: 120px;"  -->
+    <div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: 0;"></div>
+
+    <div class="container ">
+
+      <!-- Logo -->
+      <img src="/img/al5.png" alt="Logo HG Developer" class="img-fluid mb-4"
+        style="max-width: 190px; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.985)); border-radius: 50%; transition: transform 0.3s;">
+
+      <!-- Título principal -->
+      <h2 data-aos="zoom-in" class="display-5 fw-bold">Desarrollador web Full</h2>
+      <p class="lead text-light mb-4">Soy Henry Guajardo,<br>desarrollador web Full Stack con pasión por el diseño y la eficiencia</p>
+
+      <!-- Botón de acción -->
+      <a href="#proyectos" class="btn-energia btn-lg">
+        Ver proyectos
+      </a>
+
+      <!-- Redes sociales con Bootstrap Icons -->
+      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://github.com/henryguajard" target="_blank" class="navRedes1">
+          <i class="bi bi-github navRedes2" style="font-size: 1.5rem;"></i>
+        </a>
+
+        <a href="mailto:hgdeveloper006@gmail.com" class="navRedes1">
+          <i class="bi bi-envelope-fill navRedes2" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+
+      <!-- Eslogan final -->
+      <p class="lead text-light mt-4 animate__animated animate__zoomIn animate__delay-1s">
+        Potenciando tu presencia digital
+      </p>
+
     </div>
+  </header>
+  <!-- Sección sobre mí -->
+  <section id="sobre-mi" class="py-5 ">
+    <div class=" container seccion">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia ">Sobre mi</h2>
+      </a>
 
-  </div>
-</section>
-<!-- Sección servicios -->
-<section id="servicios" class="py-5 ">
-  <div class="container seccion">
-    <a href="" class="" ><h2 class="mb-5 text-center btn-energia "  >Servicios</h2></a>
-    <div class="row text-center g-4">
-      
-      <div class="col-md-6 col-lg-3 ">
-        <div class="card-neo h-100 shadow-sm ">
-          <div class="card-body">
-            <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
-            <h5 class="card-title">Desarrollo Web</h5>
-            <p class="card-text">Construyo sitios web rápidos, accesibles y modernos usando HTML, CSS, JS y frameworks como Laravel.</p>
-          </div>
+      <div class="row card-neo align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0 ">
+          <img src="/img/yo01.jpg" alt="Foto de perfil" class="img-fluid rounded-3 shadow" style="max-width: 250px;">
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-3 ">
-        <div class="card-neo h-100 shadow-sm ">
-          <div class="card-body">
-            <i class="bi bi-phone fs-1 text-success mb-3"></i>
-            <h5 class="card-title">Diseño Responsivo</h5>
-            <p class="card-text">Interfaces que se adaptan perfectamente a celulares, tablets y escritorios, brindando una experiencia uniforme.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 ">
-        <div class="card-neo h-100 shadow-sm ">
-          <div class="card-body">
-            <i class="bi bi-tools fs-1 text-warning mb-3"></i>
-            <h5 class="card-title">Mantenimiento Web</h5>
-            <p class="card-text">Soluciono errores, realizo mejoras y mantengo tu sitio actualizado y funcional a largo plazo.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-3s">
-        <div class="card-neo h-100 shadow-sm ">
-          <div class="card-body">
-            <i class="bi bi-lock fs-1 text-danger mb-3"></i>
-            <h5 class="card-title">Login y Autenticación</h5>
-            <p class="card-text">Implementación segura de sistemas de registro e inicio de sesión con validaciones modernas y roles de acceso.</p>
-          </div>
+        <div class="col-md-7">
+          <p class="fs-5 text-white">Hola, soy <strong>Henry Guajardo</strong>, desarrollador web apasionado por crear
+            soluciones digitales modernas y funcionales.</p>
+          <p class="fs-5 text-white">Trabajo con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>,
+            <strong>JavaScript</strong>, <strong>Java</strong> y frameworks como <strong>Bootstrap</strong>,
+            <strong>Laravel, </strong> y <strong>Spring Boot</strong>, enfocándome en diseño responsivo, accesibilidad y
+            experiencia de usuario.</p>
+          <p class="fs-5 text-white">Mi misión es potenciar tu presencia digital con sitios web eficientes, rápidos y
+            visualmente atractivos.</p>
+          <!-- Botón Ver CV -->
+          <a href="/docs/CV_Henry_Guajardo_Harvard_Horizontal.pdf" download class="btn-energia mt-3 w-100 d-block">
+            <i class="bi bi-file-earmark-arrow-down me-2"></i>Descargar CV
+          </a>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
-<!-- Sección habilidades -->
-<section id="habilidades" class="py-5 ">
-  <div class="container seccion">
-   <a href="" class="" ><h2 class="mb-5 text-center btn-energia " data-aos="fade-up" data-aos-delay="300" >Habilidades</h2></a>
-    
-    <div class="row card-neo ">
-      <div class="col-md-6 mb-4">
-        <h5><i class="bi bi-code-slash me-2 text-primary"></i>HTML & CSS</h5>
-        <div class="progress">
+  </section>
+  <!-- Sección servicios -->
+  <section id="servicios" class="py-5 ">
+    <div class="container seccion">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia ">Servicios</h2>
+      </a>
+      <div class="row text-center g-4">
+
+        <div class="col-md-6 col-lg-3 ">
+          <div class="card-neo h-100 shadow-sm ">
+            <div class="card-body">
+              <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">Desarrollo Web</h5>
+              <p class="card-text">Construyo sitios web rápidos, accesibles y modernos usando HTML, CSS, JS y frameworks
+                como Laravel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 ">
+          <div class="card-neo h-100 shadow-sm ">
+            <div class="card-body">
+              <i class="bi bi-phone fs-1 text-success mb-3"></i>
+              <h5 class="card-title">Diseño Responsivo</h5>
+              <p class="card-text">Interfaces que se adaptan perfectamente a celulares, tablets y escritorios, brindando
+                una experiencia uniforme.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 ">
+          <div class="card-neo h-100 shadow-sm ">
+            <div class="card-body">
+              <i class="bi bi-tools fs-1 text-warning mb-3"></i>
+              <h5 class="card-title">Mantenimiento Web</h5>
+              <p class="card-text">Soluciono errores, realizo mejoras y mantengo tu sitio actualizado y funcional a
+                largo plazo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="card-neo h-100 shadow-sm ">
+            <div class="card-body">
+              <i class="bi bi-lock fs-1 text-danger mb-3"></i>
+              <h5 class="card-title">Login y Autenticación</h5>
+              <p class="card-text">Implementación segura de sistemas de registro e inicio de sesión con validaciones
+                modernas y roles de acceso.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Sección habilidades -->
+  <section id="habilidades" class="py-5 ">
+    <div class="container seccion">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia " data-aos="fade-up" data-aos-delay="300">Habilidades</h2>
+      </a>
+
+      <div class="row card-neo ">
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-code-slash me-2 text-primary"></i>HTML & CSS</h5>
+          <div class="progress">
             <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" data-width="90%">90%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-6 mb-4">
-        <h5><i class="bi bi-bootstrap-fill me-2 text-purple"></i>Bootstrap</h5>
-        <div class="progress">
-          <div class="progress-bar bg-purple" role="progressbar" style="width: 0%;" data-width="85%">85%</div>
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-bootstrap-fill me-2 text-purple"></i>Bootstrap</h5>
+          <div class="progress">
+            <div class="progress-bar bg-purple" role="progressbar" style="width: 0%;" data-width="85%">85%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-6 mb-4">
-        <h5><i class="bi bi-filetype-js me-2 text-warning"></i>JavaScript</h5>
-        <div class="progress">
-          <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 0%;" data-width="75%">75%</div>
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-filetype-js me-2 text-warning"></i>JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 0%;" data-width="75%">75%
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-6 mb-4">
-        <h5><i class="bi bi-terminal me-2 text-success"></i>Laravel / PHP</h5>
-        <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" data-width="70%">70%</div>
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-terminal me-2 text-success"></i>Laravel / PHP</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" data-width="70%">70%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-6 mb-4">
-        <h5><i class="bi bi-terminal me-2 text-success"></i>Spring Boot / Java</h5>
-        <div class="progress">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-width="60%">60%</div>
+        <div class="col-md-6 mb-4">
+          <h5><i class="bi bi-terminal me-2 text-success"></i>Spring Boot / Java</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-width="60%">60%</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
- <!-- Sección proyectos -->
-<section id="proyectos" class="py-5 ">
-  <div class="container seccion">
-     <a href="" class="" ><h2 class="mb-5 text-center btn-energia "  >Mis Proyectos</h2></a>
-    <div class="row g-4">
+  <!-- Sección proyectos -->
+  <section id="proyectos" class="py-5 ">
+    <div class="container seccion">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia ">Mis Proyectos</h2>
+      </a>
+      <div class="row g-4">
 
-      <!-- Proyecto 1 -->
-      <div class="col-md-4">
-        <div class="card-neo h-100 shadow-sm">
-          <div id="carouselProyecto1" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/uvas-carrusel0.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="card-neo h-100 shadow-sm">
+            <div id="carouselProyecto1" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/uvas-carrusel0.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/uvas-carrusel.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="/img/uvas-carrusel.png" class="d-block w-100 img-carrusel" alt="Entre Uvas y Café 2">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Entre Uvas y Café</h5>
-            <p class="card-text small">
-              Proyecto desarrollado para una cafetería con:
-            </p>
-            <ul class="text-start small ps-3">
-              <li>Página de inicio moderna y responsiva</li>
-              <li>Catálogo de productos</li>
-              <li>Formulario de contacto funcional</li>
-              <li>Panel de administración seguro</li>
-              <li>Gestión de productos con Firebase</li>
-              <li>SEO básico y enlaces a redes</li>
-            </ul>
-            <a href="https://entreuvasycafe.cl/" class="btn-energia mt-auto" target="_blank">Ver proyecto</a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Entre Uvas y Café</h5>
+              <p class="card-text small">
+                Proyecto desarrollado para una cafetería con:
+              </p>
+              <ul class="text-start small ps-3 list-unstyled">
+                <li>Página de inicio moderna y responsiva</li>
+                <li>Catálogo de productos</li>
+                <li>Formulario de contacto funcional</li>
+                <li>Panel de administración seguro</li>
+                <li>Gestión de productos con Firebase</li>
+                <li>SEO básico y enlaces a redes</li>
+              </ul>
+              <a href="https://entreuvasycafe.cl/" class="btn-energia mt-auto" target="_blank">Ver proyecto</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Proyecto 2 -->
-      <div class="col-md-4">
-        <div class="card-neo h-100 shadow-sm">
-          <div id="carouselProyecto2" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/carrusel-decoh1.png" class="d-block w-100 img-carrusel" alt="DecoHouse 1">
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="card-neo h-100 shadow-sm">
+            <div id="carouselProyecto2" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/carrusel-decoh1.png" class="d-block w-100 img-carrusel" alt="DecoHouse 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/carruseldecoh2.png" class="d-block w-100 img-carrusel" alt="DecoHouse 2">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="/img/carruseldecoh2.png" class="d-block w-100 img-carrusel" alt="DecoHouse 2">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">DecoHouse (actualización en proceso)</h5>
-            <p class="card-text small">Ecommerce de muebles con frontend y backend integrados:</p>
-            <ul class="text-start small ps-3">
-              <li>HTML5, CSS3, JavaScript, Bootstrap 5</li>
-              <li>Node.js, Express, EJS</li>
-              <li>MongoDB Atlas con Mongoose</li>
-              <li>Render (hosting)</li>
-            </ul>
-            <a href="https://decohouse.onrender.com/" class="btn-energia mt-auto" target="_blank">Ver proyecto</a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">DecoHouse (actualización en proceso)</h5>
+              <p class="card-text small">Ecommerce de muebles con frontend y backend integrados:</p>
+              <ul class="text-start small ps-3 list-unstyled">
+                <li>HTML5, CSS3, JavaScript, Bootstrap 5</li>
+                <li>Node.js, Express, EJS</li>
+                <li>MongoDB Atlas con Mongoose</li>
+                <li>Render (hosting)</li>
+              </ul>
+              <a href="https://decohouse.onrender.com/" class="btn-energia mt-auto" target="_blank">Ver proyecto</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Proyecto 3 -->
-      <div class="col-md-4">
-        <div class="card-neo h-100 shadow-sm">
-          <div id="carouselProyecto3" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/carrusel-mononas1.png" class="d-block w-100 img-carrusel" alt="Mononas 1">
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="card-neo h-100 shadow-sm">
+            <div id="carouselProyecto3" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/carrusel-mononas1.png" class="d-block w-100 img-carrusel" alt="Mononas 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/carrusel-mononas2.png" class="d-block w-100 img-carrusel" alt="Mononas 2">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="/img/carrusel-mononas2.png" class="d-block w-100 img-carrusel" alt="Mononas 2">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Cafetería MononaS (actualización en proceso)</h5>
-            <p class="card-text small">Sitio web para cafetería local:</p>
-            <ul class="text-start small ps-3">
-              <li>Diseño personalizado y responsive</li>
-              <li>Menú digital y redes sociales</li>
-              <li>Formulario de contacto</li>
-            </ul>
-            <a href="https://henryguajard.github.io/cafeMononaS/" class="btn-energia mt-auto" target="_blank">Ver proyecto</a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cafetería MononaS (actualización en proceso)</h5>
+              <p class="card-text small">Sitio web para cafetería local:</p>
+              <ul class="text-start small ps-3 list-unstyled">
+                <li>Diseño personalizado y responsive</li>
+                <li>Menú digital y redes sociales</li>
+                <li>Formulario de contacto</li>
+              </ul>
+              <a href="https://henryguajard.github.io/cafeMononaS/" class="btn-energia mt-auto" target="_blank">Ver
+                proyecto</a>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Sección formación -->
-<section id="formacion" class="py-5 ">
-  <div class="container seccion">
-     <a href="" class="" ><h2 class="mb-5 text-center btn-energia "  >Formacion</h2></a>
+  <section id="formacion" class="py-5 ">
+    <div class="container seccion">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia ">Formación</h2>
+      </a>
 
-    <!-- Educación -->
-    <div class="card-neo shadow-lg   mb-4">
-      <h5><i class="bi bi-mortarboard-fill text-primary me-2"></i>Educación</h5>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex align-items-start">
-          <img src="/img/Logotipo-IPSS.png" alt="San Sebastián" width="100" class="me-3 mt-1">
-          <div class="">
-            <strong class="text-white">Instituto Profesional San Sebastián</strong><br>
-           <span class="text-white"> Técnico en Programación y Análisis de Sistemas<br></span>
-            <span class="text-white">2023 - Actualidad</span>
-          </div>
-        </li>
-      </ul>
+      <!-- Educación -->
+      <div class="card-neo shadow-lg   mb-4">
+        <h5><i class="bi bi-mortarboard-fill text-primary me-2"></i>Educación</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-start">
+            <img src="/img/Logotipo-IPSS.png" alt="San Sebastián" width="100" class="me-3 mt-1">
+            <div class="">
+              <strong class="text-white">Instituto Profesional San Sebastián</strong><br>
+              <span class="text-white"> Técnico en Programación y Análisis de Sistemas<br></span>
+              <span class="text-white">2023 - Actualidad</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Certificaciones -->
+      <div class="card-neo shadow-lg ">
+        <h5><i class="bi bi-award-fill text-white me-2"></i>Certificaciones y Cursos</h5>
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item d-flex align-items-center">
+            <img src="/img/logoAWSacademy.png" alt="AWS" width="100" class="me-3">
+            <div class="text-white">
+              AWS Academy Cloud Foundations<br>
+              <span class="text-white">Noviembre 2024</span>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center">
+            <img src="/img/Oracle-Academy_logo.png" alt="Oracle" width="100" class="me-3">
+            <div class="text-white">
+              Oracle Academy – Database Foundations<br>
+              <span class="text-white">Octubre 2024</span>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center">
+            <img src="/img/Oracle-Academy_logo.png" alt="Oracle Java" width="100" class="me-3">
+            <div class="text-white">
+              Oracle Academy – Java Foundations<br>
+              <span class="text-white">Junio 2023</span>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center">
+            <img src="/img/logoCoder.png" alt="CoderHouse JS" width="100" class="me-3">
+            <div class="text-white">
+              CoderHouse – JavaScript<br>
+              <span class="text-white">Marzo 2023</span>
+            </div>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center">
+            <img src="/img/logoCoder.png" alt="CoderHouse Web" width="100" class="me-3">
+            <div class="text-white">
+              CoderHouse – Desarrollo Web<br>
+              <span class="text-white">Diciembre 2022</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </div>
+  </section>
+  <!-- Sección contacto -->
+  <section id="contacto" class=" py-5 seccion">
+    <div class="container">
+      <a class="">
+        <h2 class="mb-5 text-center btn-energia ">Contactame</h2>
+      </a>
 
-    <!-- Certificaciones -->
-    <div class="card-neo shadow-lg ">
-      <h5><i class="bi bi-award-fill text-white me-2"></i>Certificaciones y Cursos</h5>
-      <ul class="list-group list-group-flush">
+      <form id="contactForm" class="card-neo shadow-lg p-4 " style="max-width: 500px; "
+        action="https://formsubmit.co/ajax/hgdeveloper006@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <!-- Anti-spam -->
+        <input type="hidden" name="_honey" style="display:none">
 
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/logoAWSacademy.png" alt="AWS" width="100" class="me-3">
-          <div>
-            AWS Academy Cloud Foundations<br>
-            <span class="text-white">Noviembre 2024</span>
-          </div>
-        </li>
-
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/Oracle-Academy_logo.png" alt="Oracle" width="100" class="me-3">
-          <div>
-            Oracle Academy – Database Foundations<br>
-            <span class="text-white">Octubre 2024</span>
-          </div>
-        </li>
-
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/Oracle-Academy_logo.png" alt="Oracle Java" width="100" class="me-3">
-          <div>
-            Oracle Academy – Java Foundations<br>
-            <span class="text-white">Junio 2023</span>
-          </div>
-        </li>
-
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/logoCoder.png" alt="CoderHouse JS" width="100" class="me-3">
-          <div>
-            CoderHouse – JavaScript<br>
-            <span class="text-white">Marzo 2023</span>
-          </div>
-        </li>
-
-        <li class="list-group-item d-flex align-items-center">
-          <img src="/img/logoCoder.png" alt="CoderHouse Web" width="100" class="me-3">
-          <div>
-            CoderHouse – Desarrollo Web<br>
-            <span class="text-white">Diciembre 2022</span>
-          </div>
-        </li>
-
-      </ul>
+        <!-- Campos visibles -->
+        <div class=" cmb-3">
+          <label for="nombre" class="form-label ">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-energia w-100">Enviar</button>
+      </form>
     </div>
-  </div>
-</section>
- <!-- Sección contacto -->
-<section id="contacto" class=" py-5 seccion">
-  <div class="container">
-    <a href="" class="" ><h2 class="mb-5 text-center btn-energia "  >Contactame</h2></a>
-
-   <form 
-  id="contactForm"
-  class="card-neo shadow-lg p-4 "
-  style="max-width: 500px; "
-  action="https://formsubmit.co/ajax/hgdeveloper006@gmail.com"
-  method="POST"
->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <!-- Anti-spam -->
-  <input type="hidden" name="_honey" style="display:none">
-  
-  <!-- Campos visibles -->
-  <div class=" cmb-3">
-    <label for="nombre" class="form-label ">Nombre</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" required />
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Correo electrónico</label>
-    <input type="email" class="form-control" id="email" name="email" required />
-  </div>
-  <div class="mb-3">
-    <label for="mensaje" class="form-label">Mensaje</label>
-    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-  </div>
-  <button type="submit" class="btn-energia w-100">Enviar</button>
-</form>
-  </div>
-</section>
-    <!-- Sección footer -->
-  <footer class="bg-white  text-dark text-center py-4 mt-5">
-  <div class="container  d-flex flex-column align-items-center">
-    <img src="/img/AlbedoBase_X.png" alt="Logo Henry" width="70" height="80" class="logo-nav mb-2" />
-    <p class="mb-0">© 2025 Henry Guajardo. Todos los derechos reservados.</p>
-  </div>
-</footer>
+  </section>
+  <!-- Sección footer -->
+  <footer class=" text-center py-4 mt-5">
+    <div class="container  d-flex flex-column align-items-center">
+      <img src="/img/al5.png" alt="Logo Henry" width="70" height="80" class="logo-nav mb-2" />
+      <p class="mb-0">© 2025 Henry Guajardo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-  <!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- SweetAlert2 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- JS personalizado -->
   <script src="/js/contacto.js"></script>
   <script src="/js/habilidades.js"></script>
   <script src="/js/nav.js"></script>
-   <script>
+  <script>
     // Inicializa AOS (si está disponible)
-    if (window.AOS){ AOS.init({ duration: 1000, once: true }); }
+    if (window.AOS) { AOS.init({ duration: 1000, once: true }); }
   </script>
 </body>
+
 </html>
