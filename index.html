@@ -59,8 +59,7 @@
       <div class="collapse navbar-collapse" id="navbarContenido">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item px-lg-2"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item px-lg-2"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
-          <li class="nav-item px-lg-2"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item px-lg-2"><a class="nav-link" href="#experiencia">Experiencia </a></li>
           <li class="nav-item px-lg-2"><a class="nav-link" href="#habilidades">Habilidades</a></li>
           <li class="nav-item px-lg-2"><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li class="nav-item px-lg-2"><a class="nav-link" href="#formacion">Formacion</a></li>
@@ -70,177 +69,422 @@
   </nav>
 
 
-  <!-- Sección inicio -->
-  <header id="inicio" class="text-white text-center d-flex align-items-center position-relative"
-    style="background: linear-gradient(180deg, #6b7c93 , #051428);min-height: 100vh; padding-top: 120px;">
-    <!-- Partículas de fondo style="background: linear-gradient(180deg, #343334 , #0f0f0f); min-height: 100vh; padding-top: 120px;"  -->
-    <div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: 0;"></div>
+ <!-- ================= HERO ================= -->
+<header id="inicio" class="hero-section">
 
-    <div class="container ">
+    <div id="tsparticles"></div>
 
-      <!-- Logo -->
-      <img src="/img/1000289442.png" alt="Logo HG Developer" class="img-fluid mb-4"
-        style="max-width: 250px; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.985)); border-radius: 50%; transition: transform 0.3s;">
-
-      <!-- Título principal -->
-      <h2 data-aos="zoom-in" class="display-5 fw-bold">Desarrollador web Full Stack</h2>
-      <p class="lead text-light mb-4">Soy Henry Guajardo,<br>desarrollador web Full Stack con pasión por el diseño y la eficiencia</p>
-
-      <!-- Botón de acción -->
-      <a href="#proyectos" class="btn-energia btn-lg">
-        Ver proyectos
-      </a>
-
-      <!-- Redes sociales con Bootstrap Icons -->
-      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-        <a href="https://github.com/henryguajard" target="_blank" class="navRedes1">
-          <i class="bi bi-github navRedes2" style="font-size: 1.5rem;"></i>
-        </a>
-
-        <a href="mailto:hgdeveloper006@gmail.com" class="navRedes1">
-          <i class="bi bi-envelope-fill navRedes2" style="font-size: 1.5rem;"></i>
-        </a>
-      </div>
-
-      <!-- Eslogan final -->
-      <p class="lead text-light mt-4 animate__animated animate__zoomIn animate__delay-1s">
-        Potenciando tu presencia digital
-      </p>
-
-    </div>
-  </header>
-  <!-- Sección sobre mí -->
-  <section id="sobre-mi" class="py-5 ">
-    <div class=" container seccion">
-      <a class="">
-        <h2 class="mb-5 text-center btn-energia ">Sobre mi</h2>
-      </a>
-
-      <div class="row card-neo align-items-center">
-        <div class="col-md-5 text-center mb-4 mb-md-0 ">
-          <img src="/img/yo01.jpg" alt="Foto de perfil" class="img-fluid rounded-3 shadow" style="max-width: 250px;">
-        </div>
-
-        <div class="col-md-7">
-          <p class="fs-5 text-black">Hola, soy <strong>Henry Guajardo</strong>, desarrollador web apasionado por crear
-            soluciones digitales modernas y funcionales.</p>
-          <p class="fs-5 text-black">Trabajo con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>,
-            <strong>JavaScript</strong>, <strong>Java</strong> y frameworks como <strong>Bootstrap</strong>,
-            <strong>Laravel, </strong> y <strong>Spring Boot</strong>, enfocándome en diseño responsivo, accesibilidad y
-            experiencia de usuario.</p>
-          <p class="fs-5 text-black">Mi misión es potenciar tu presencia digital con sitios web eficientes, rápidos y
-            visualmente atractivos.</p>
-          <!-- Botón Ver CV -->
-          <a href="/docs/CV_Henry_Guajardo_Harvard_Horizontal.pdf" download class="btn-energia mt-3 w-100 d-block">
-            <i class="bi bi-file-earmark-arrow-down me-2"></i>Descargar CV
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- Sección servicios -->
-  <section id="servicios" class="py-5 ">
     <div class="container seccion">
-      <a class="">
-        <h2 class="mb-5 text-center btn-energia ">Servicios</h2>
-      </a>
-      <div class="row text-center g-4">
 
-        <div class="col-md-6 col-lg-3 ">
-          <div class="card-neo h-100 shadow-sm ">
-            <div class="card-body">
-              <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
-              <h5 class="card-title">Desarrollo Web</h5>
-              <p class="card-text text-black">Construyo sitios web rápidos, accesibles y modernos usando HTML, CSS, JS y frameworks
-                como Laravel.</p>
+        <div class="row align-items-center min-vh-100">
+
+            <!-- Información -->
+            <div class="col-lg-7 text-center text-lg-start order-2 order-lg-1">
+
+                <span class="badge bg-info text-dark px-3 py-2 mb-4 fs-6">
+                    Disponible para nuevos desafíos TI
+                </span>
+
+                <h1 class="display-3 fw-bold text-white">
+                    Henry Nicolás Guajardo
+                </h1>
+
+                <h3 class="text-info fw-semibold mb-4">
+                    Analista TI · Desarrollador Web · Cisco CCNA
+                </h3>
+
+                <p class="lead text-light mb-4">
+                    Actualmente me desempeño como
+                    <strong>Analista de Fallas Virtuales Webpay</strong>,
+                    combinando experiencia en soporte TI, desarrollo web,
+                    redes Cisco y computación en la nube.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+
+                    <a href="/docs/CV_Henry_Nicolas_Guajardo_Actualizado_v2.pdf"
+                        class="btn btn-info btn-lg px-4">
+
+                        <i class="bi bi-download me-2"></i>
+                        Descargar CV
+
+                    </a>
+
+                    <a href="https://github.com/henryguajard"
+                        target="_blank"
+                        class="btn btn-outline-light btn-lg">
+
+                        <i class="bi bi-github"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/henry-guajardo-28271925b/"
+                        target="_blank"
+                        class="btn btn-outline-info btn-lg">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+                </div>
+
             </div>
-          </div>
+
+            <!-- Fotografía -->
+
+            <div class="col-lg-5 text-center order-1 order-lg-2 mb-5 mb-lg-0">
+
+                <img src="/img/yo.jpg"
+                    alt="Henry Guajardo"
+                    class="hero-photo img-fluid">
+
+            </div>
+
         </div>
 
-        <div class="col-md-6 col-lg-3 ">
-          <div class="card-neo h-100 shadow-sm ">
-            <div class="card-body">
-              <i class="bi bi-phone fs-1 text-success mb-3"></i>
-              <h5 class="card-title">Diseño Responsivo</h5>
-              <p class="card-text text-black">Interfaces que se adaptan perfectamente a celulares, tablets y escritorios, brindando
-                una experiencia uniforme.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 ">
-          <div class="card-neo h-100 shadow-sm ">
-            <div class="card-body">
-              <i class="bi bi-tools fs-1 text-warning mb-3"></i>
-              <h5 class="card-title">Mantenimiento Web</h5>
-              <p class="card-text text-black">Soluciono errores, realizo mejoras y mantengo tu sitio actualizado y funcional a
-                largo plazo.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="card-neo h-100 shadow-sm ">
-            <div class="card-body">
-              <i class="bi bi-lock fs-1 text-danger mb-3"></i>
-              <h5 class="card-title">Login y Autenticación</h5>
-              <p class="card-text text-black">Implementación segura de sistemas de registro e inicio de sesión con validaciones
-                modernas y roles de acceso.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </section>
-  <!-- Sección habilidades -->
-  <section id="habilidades" class="py-5 ">
+
+</header>
+
+<!-- ================= FIN HERO ================= -->
+  
+  <!-- ================= EXPERIENCIA ================= -->
+
+<section id="experiencia" class="py-5">
+
     <div class="container seccion">
-      <a class="">
-        <h2 class="mb-5 text-center btn-energia " data-aos="fade-up" data-aos-delay="300">Habilidades</h2>
-      </a>
 
-      <div class="row card-neo ">
-        <div class="col-md-6 mb-4">
-          <h5><i class="bi bi-code-slash me-2 text-primary"></i>HTML & CSS</h5>
-          <div class="progress">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" data-width="90%">90%</div>
-          </div>
-        </div>
+        <h2 class="text-center mb-5 fw-bold text-white">
+            Experiencia Profesional
+        </h2>
 
-        <div class="col-md-6 mb-4">
-          <h5><i class="bi bi-bootstrap-fill me-2 text-purple"></i>Bootstrap</h5>
-          <div class="progress">
-            <div class="progress-bar bg-purple" role="progressbar" style="width: 0%;" data-width="85%">85%</div>
-          </div>
-        </div>
+        <div class="timeline">
 
-        <div class="col-md-6 mb-4">
-          <h5><i class="bi bi-filetype-js me-2 text-warning"></i>JavaScript</h5>
-          <div class="progress">
-            <div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 0%;" data-width="75%">75%
+            <!-- Webpay -->
+
+            <div class="timeline-item card-neo mb-4">
+
+                <span class="badge bg-info mb-3">
+                    Sept. 2025 - Actualidad
+                </span>
+
+                <h4>
+                    <i class="bi bi-pc-display me-2 text-info"></i>
+
+                    Analista de Fallas Virtuales Webpay
+
+                </h4>
+
+                <h6 class="text-secondary">
+                    CGS
+                </h6>
+
+                <ul>
+
+                    <li>Diagnóstico y análisis de incidentes.</li>
+
+                    <li>Seguimiento de tickets.</li>
+
+                    <li>Soporte técnico N1 / N2.</li>
+
+                    <li>Coordinación con equipos internos.</li>
+
+                    <li>Cumplimiento de SLA.</li>
+
+                </ul>
+
             </div>
-          </div>
+
+            <!-- Entre Uvas -->
+
+            <div class="timeline-item card-neo mb-4">
+
+                <span class="badge bg-success mb-3">
+                    2025
+                </span>
+
+                <h4>
+
+                    <i class="bi bi-code-slash me-2 text-success"></i>
+
+                    Desarrollador Web
+
+                </h4>
+
+                <h6 class="text-secondary">
+
+                    Entre Uvas y Café
+
+                </h6>
+
+                <ul>
+
+                    <li>Desarrollo del sitio web.</li>
+
+                    <li>Panel administrativo.</li>
+
+                    <li>Firebase.</li>
+
+                    <li>HTML, CSS y JavaScript.</li>
+
+                    <li>Corrección de errores y mejoras.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Tottus -->
+
+            <div class="timeline-item card-neo mb-4">
+
+                <span class="badge bg-warning text-dark mb-3">
+
+                    15 años
+
+                </span>
+
+                <h4>
+
+                    <i class="bi bi-shop me-2 text-warning"></i>
+
+                    Área Comercial y Operaciones
+
+                </h4>
+
+                <h6 class="text-secondary">
+
+                    Tottus
+
+                </h6>
+
+                <ul>
+
+                    <li>Atención de clientes.</li>
+
+                    <li>Ventas y postventa.</li>
+
+                    <li>Caja e inventarios.</li>
+
+                    <li>Procesos operacionales.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Alcansa -->
+
+            <div class="timeline-item card-neo">
+
+                <span class="badge bg-danger mb-3">
+
+                    2 años
+
+                </span>
+
+                <h4>
+
+                    <i class="bi bi-graph-up-arrow me-2 text-danger"></i>
+
+                    Promotor de Ventas
+
+                </h4>
+
+                <h6 class="text-secondary">
+
+                    Alcansa
+
+                </h6>
+
+                <ul>
+
+                    <li>Promoción de productos.</li>
+
+                    <li>Atención a clientes.</li>
+
+                    <li>Cumplimiento de metas.</li>
+
+                </ul>
+
+            </div>
+
         </div>
 
-        <div class="col-md-6 mb-4">
-          <h5><i class="bi bi-terminal me-2 text-success"></i>Laravel / PHP</h5>
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" data-width="70%">70%</div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <h5><i class="bi bi-terminal me-2 text-success"></i>Spring Boot / Java</h5>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" data-width="60%">60%</div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
+</section>
+  <!-- ================= TECNOLOGÍAS ================= -->
+
+<section id="habilidades" class="py-5">
+
+    <div class="container seccion">
+
+        <h2 class="text-center text-white fw-bold mb-5">
+            Tecnologías y Herramientas
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Frontend -->
+
+            <div class="col-lg-6 card-neo">
+
+                <div class="tech-card h-100">
+
+                    <div class="d-flex align-items-center mb-4">
+
+                        <i class="bi bi-code-slash fs-1 text-info me-3"></i>
+
+                        <div>
+
+                            <h4 class="text-white">Frontend</h4>
+
+                            <small class="text-white">Desarrollo de interfaces modernas</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tech-list">
+
+                        <span class="text-white">HTML5</span>
+
+                        <span class="text-white">CSS3</span>
+
+                        <span class="text-white">Bootstrap 5</span>
+
+                        <span class="text-white">JavaScript</span>
+
+                        <span class="text-white">Responsive Design</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Backend -->
+
+            <div class="col-lg-6 card-neo">
+
+                <div class="tech-card h-100">
+
+                    <div class="d-flex align-items-center mb-4">
+
+                        <i class="bi bi-server fs-1 text-success me-3"></i>
+
+                        <div>
+
+                            <h4>Backend</h4>
+
+                            <small>Aplicaciones y bases de datos</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tech-list">
+
+                        <span>Laravel</span>
+
+                        <span>PHP</span>
+
+                        <span>Java</span>
+
+                        <span>Spring Boot</span>
+
+                        <span>SQL</span>
+
+                        <span>Firebase</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Redes -->
+
+            <div class="col-lg-6 card-neo">
+
+                <div class="tech-card h-100">
+
+                    <div class="d-flex align-items-center mb-4">
+
+                        <i class="bi bi-diagram-3 fs-1 text-warning me-3"></i>
+
+                        <div>
+
+                            <h4>Networking</h4>
+
+                            <small>Infraestructura y comunicaciones</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tech-list">
+
+                        <span>TCP/IP</span>
+
+                        <span>IPv4 / IPv6</span>
+
+                        <span>Cisco CCNA</span>
+
+                        <span>Switching</span>
+
+                        <span>Routing</span>
+
+                        <span>Packet Tracer</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Cloud -->
+
+            <div class="col-lg-6 card-neo">
+
+                <div class="tech-card h-100">
+
+                    <div class="d-flex align-items-center mb-4">
+
+                        <i class="bi bi-cloud fs-1 text-primary me-3"></i>
+
+                        <div>
+
+                            <h4>Cloud & Herramientas</h4>
+
+                            <small>Servicios y herramientas de desarrollo</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tech-list">
+
+                        <span>AWS Academy</span>
+
+                        <span>Oracle Database</span>
+
+                        <span>GitHub</span>
+
+                        <span>SAP Business One</span>
+
+                        <span>Excel Avanzado</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
   <!-- Sección proyectos -->
   <section id="proyectos" class="py-5 ">
     <div class="container seccion">
@@ -272,10 +516,10 @@
             </div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Entre Uvas y Café</h5>
-              <p class="card-text  text-black small">
+              <p class="card-text  text-white small">
                 Proyecto desarrollado para una cafetería con:
               </p>
-              <ul class="text-start text-black small ps-3 list-unstyled">
+              <ul class="text-start text-white small ps-3 list-unstyled">
                 <li>Página de inicio moderna y responsiva</li>
                 <li>Catálogo de productos</li>
                 <li>Formulario de contacto funcional</li>
@@ -311,8 +555,8 @@
             </div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">DecoHouse (actualizado)</h5>
-              <p class="card-text text-black small">Ecommerce de muebles con frontend y backend integrados:</p>
-              <ul class="text-start  text-black small ps-3 list-unstyled">
+              <p class="card-text text-white small">Ecommerce de muebles con frontend y backend integrados:</p>
+              <ul class="text-start  text-white  small ps-3 list-unstyled">
                 <li>HTML5, CSS3, JavaScript, Bootstrap 5</li>
                 <li>Node.js, Express, EJS</li>
                 <li>MongoDB Atlas con Mongoose</li>
@@ -346,8 +590,8 @@
             </div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Cafetería MononaS (actualización en proceso)</h5>
-              <p class="card-text text-black small">Sitio web para cafetería local:</p>
-              <ul class="text-start text-black small ps-3 list-unstyled">
+              <p class="card-text text-white small">Sitio web para cafetería local:</p>
+              <ul class="text-start text-white small ps-3 list-unstyled">
                 <li>Diseño personalizado y responsive</li>
                 <li>Menú digital y redes sociales</li>
                 <li>Formulario de contacto</li>
@@ -398,7 +642,7 @@
         <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/CCNA_SRWE-logo.png" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     Cisco Networking Academy CCNA<br>
                     <span>Junio 2026</span>
                 </div>
@@ -408,7 +652,7 @@
          <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/pngwing.com.png" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     Excel TOTAL en 30 Días - Excel completo de Cero a Avanzado<br>
                     <span>Noviembre 2025</span>
                 </div>
@@ -418,7 +662,7 @@
          <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/pngwing.com.png" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     SAP BUSINESS ONE: Cero a Experto<br>
                     <span>Septiembre 2025</span>
                 </div>
@@ -428,7 +672,7 @@
         <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/logoAWSacademy.png" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     AWS Academy Cloud Foundations<br>
                     <span>Noviembre 2024</span>
                 </div>
@@ -438,7 +682,7 @@
         <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/Oracle-Academy_logo.png" alt="Oracle" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     Oracle Academy – Database Foundations<br>
                     <span>Octubre 2024</span>
                 </div>
@@ -448,7 +692,7 @@
          <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/Oracle-Academy_logo.png" alt="Oracle" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     Oracle Academy – Java Foundations<br>
                     <span>Junio 2023</span>
                 </div>
@@ -458,7 +702,7 @@
          <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/logoCoder.png" alt="CoderHouse JS" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                     CoderHouse – JavaScript<br>
                     <span>Marzo 2023</span>
                 </div>
@@ -468,7 +712,7 @@
          <div class="col-12 col-lg-6">
             <div class="list-group-item d-flex align-items-center h-100">
                 <img src="/img/logoCoder.png" alt="CoderHouse JS" width="100" class="me-3">
-                <div class="text-black">
+                <div class="text-white">
                      CoderHouse – Desarrollo Web<br>
                     <span>Noviembre 2024</span>
                 </div>
@@ -494,15 +738,15 @@
 
         <!-- Campos visibles -->
         <div class=" cmb-3">
-          <label for="nombre" class="form-label text-black">Nombre</label>
+          <label for="nombre" class="form-label text-white">Nombre</label>
           <input type="text" class="form-control" id="nombre" name="nombre" required />
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label text-black">Correo electrónico</label>
+          <label for="email" class="form-label text-white">Correo electrónico</label>
           <input type="email" class="form-control" id="email" name="email" required />
         </div>
         <div class="mb-3">
-          <label for="mensaje" class="form-label text-black">Mensaje</label>
+          <label for="mensaje" class="form-label text-white">Mensaje</label>
           <textarea class="form-control " id="mensaje" name="mensaje" rows="4" required></textarea>
         </div>
         <button type="submit" class="btn-energia w-100">Enviar</button>

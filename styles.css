@@ -27,7 +27,238 @@ html {
  card-body ul li{
   text-decoration: none !important;
 }
+/* ================= HERO ================= 
 
+.hero-section{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(180deg,#071426,#020617);
+
+    overflow:hidden;
+
+}
+
+#tsparticles{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:0;
+
+}
+
+.hero-section .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-photo{
+
+    width:340px;
+
+    max-width:90%;
+
+    border-radius:50%;
+
+    border:6px solid #38bdf8;
+
+    box-shadow:0 0 40px rgba(56,189,248,.35);
+
+    transition:.4s;
+
+}
+
+.hero-photo:hover{
+
+    transform:scale(1.03);
+
+}
+
+.stats-section{
+
+    background:#020617;
+
+}
+
+.stats-section .card-neo{
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:#0f172a;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.stats-section .card-neo:hover{
+
+    transform:translateY(-8px);
+
+}*/
+/* ================= HERO ================= */
+/*================ EXPERIENCIA ================
+
+#experiencia{
+
+    background:#071426;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline-item{
+
+    padding:30px;
+
+    border-left:5px solid #38bdf8;
+
+    transition:.3s;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateX(8px);
+
+    border-left:5px solid white;
+
+}
+
+.timeline-item ul{
+
+    margin-top:15px;
+
+    padding-left:20px;
+
+}
+
+.timeline-item li{
+
+    margin-bottom:10px;
+
+    color:#d4d4d4;
+
+}
+
+.timeline h4{
+
+    color:white;
+
+}*/
+/*================ EXPERIENCIA ================*/
+/*=========================
+TECNOLOGÍAS
+==========================
+
+#habilidades{
+
+    background:#020617;
+
+}
+
+.tech-card{
+
+    background:#0f172a;
+
+    border:1px solid #1e293b;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    color:white;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38bdf8;
+
+    box-shadow:0 15px 35px rgba(56,189,248,.18);
+
+}
+
+.tech-card h4{
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.tech-card small{
+
+    color:#94a3b8;
+
+}
+
+.tech-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.tech-list span{
+
+    background:#1e293b;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.tech-list span:hover{
+
+    background:#38bdf8;
+
+    color:#020617;
+
+    transform:scale(1.05);
+
+}*/
+/*=========================
+TECNOLOGÍAS
+==========================*/
 .navbar-toggler {
   outline: none;
   box-shadow: none;
