@@ -1,17 +1,18 @@
 :root{
       --azul:#1e90ff;
-      --cian:#00cfff;
+      --cian:#162d6d;
       --metal:#6b7c93;
-      --fondo1:#0a0f1f;
+      --fondo1:#06154e;
       --fondo2:#051428;
       --gato-glow: #1F51FF;
     }
 
 body {
    font-family:'Orbitron',system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      
       background:
-        url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%2300cfff' stroke-width='1' opacity='0.05'%3E%3Cpath d='M0 60h60v60H0zM60 0h60v60H60z'/%3E%3Cpath d='M30 0v120M0 30h120M90 0v120M0 90h120'/%3E%3C/g%3E%3C/svg%3E") repeat,
-        linear-gradient(180deg,var(--fondo1),var(--fondo2));
+        
+        linear-gradient(80deg,var(--fondo1),var(--fondo2));
       background-size:auto,cover;
       min-height:100vh;
 }
@@ -55,7 +56,7 @@ html {
 .btn-primary:focus,
 .btn-primary:focus:active,
 .btn-primary:visited {
-  background-color: #162d6d !important;
+  background-color: var(--azul) !important;
   color: #FFFFFF !important;
   box-shadow: none !important;
   border-color: transparent !important;
@@ -76,7 +77,7 @@ h2::before{
     }
 
  h2, h5 {
-  color: var(--cian)!important;
+  color: var(--azul)!important;
 }
 
   nav a{
